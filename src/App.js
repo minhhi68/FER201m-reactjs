@@ -10,8 +10,8 @@ import {Navbar, NavbarBrand} from 'reactstrap';
 //   return user.firstName + '' +user.lastName;
 // } 
 // const user = {
-//   firstName: 'Harper',
-//   lastName: 'Perez'
+//   firstName: 'Minh Khang',
+//   lastName: 'Nguyen'
 // };
 
 // const element = (
