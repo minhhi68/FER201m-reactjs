@@ -10,6 +10,37 @@ import Comment from './components/Comment';
 import Avatar from './components/Avatar';
 import Car from './components/Car';
 import Menu from './components/MenuComponent';
+import PresentationalComponent from './components/PresentationalComponent';
+import ContainerComponent from './components/ContainerComponent';
+import { BrowserRouter, Switch } from 'react-router-dom';
+
+import Layout from './components/Layout';
+import Home from './components/Home';
+import Blogs from './components/Blogs';
+import Contact from './components/Contact';
+import NoPage from './components/NoPage';
+
+import { BrowerRouter } from 'react-router-dom';
+
+
+<BrowserRouter>
+<div>
+<Switch>
+<Route path ="/" component = {Layout}/>
+<Route path ="/Home" component = {Home}/>
+<Route path ="/Blogs" component = {Blogs}/>
+<Route path ="/Contact" component = {Contact}/>
+<Route path ="*" component = {NoPage}/>
+<Switch>
+</div>
+</BrowserRouter>
+
+
+
+
+
+
+
 
 function App(){
   return(
@@ -26,6 +57,10 @@ function App(){
 }
 
 export default App;
+
+
+
+
 
 
 
