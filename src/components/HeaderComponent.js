@@ -34,7 +34,7 @@
 // export default Header;
 
 import React from "react";
-import {Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron} from "reactstrap";
+import {Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem} from "reactstrap";
 import { NavLink } from "react-router-dom";
 class Header extends React.Component {
    constructor(props) {
@@ -56,7 +56,7 @@ class Header extends React.Component {
             <Navbar dark expand="md">
                <div className="container">
                   <NavbarToggler onClick={this.toggleNav} />
-                  <NavbarBrand className="mr-auto" href="/"> <img src="assets/images/logo.png" height="30" width="41"/>
+                  <NavbarBrand className="mr-auto" href="/"> <img src='assets/images/logo.png' height="30" alt="/"/>
                   </NavbarBrand>
                   <Collapse isOpen={this.state.isNavOpen} navbar>
                      <Nav navbar>

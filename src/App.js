@@ -37,7 +37,7 @@ import React from "react";
 
 import { DISHES } from "./shared/dishes";
 import Main from "./components/MainComponent";
-import Home from "./components/HeaderComponent";
+// import Home from "./components/HomeComponent";
 import { BrowserRouter } from "react-router-dom";
 // function App() {
 //    return (
