@@ -264,6 +264,6 @@ const DishDetail = (props) => {
   } else {
     return <div></div>;
   }
-}; 
+};
 
 export default DishDetail;

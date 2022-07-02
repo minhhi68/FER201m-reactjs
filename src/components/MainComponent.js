@@ -129,6 +129,7 @@ import { PROMOTIONS } from "../shared/promotions";
 import { LEADERS } from "../shared/leaders";
 import { DISHES } from "../shared/dishes";
 import { Switch, Route, Redirect } from "react-router-dom";
+import About from "./AboutComponent";
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -157,12 +158,19 @@ class Main extends Component {
       );
     };
 
-    
+    const AboutUsPage = () => {
+      return (
+        <About leaders={this.state.leaders} />
+      )
+    }
+
+
     return (
       <div>
         <Header />
         <Switch>
           <Route path="/home" component={HomePage} />
+          <Route exact path="/aboutus" component={AboutUsPage} />
           <Route
             exact
             path="/menu"
